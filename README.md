@@ -1,12 +1,12 @@
 # Event Data Project
 
-_project description_
+The goal of this project is that we can answer simple questions, such as “Has this user tried this feature already?” and “Has this new user logged in yet?
 
 # Outline for project and core tasks for learning and implementation
 
 ## 1. Write a tracking plan for core events of the product
 
-Create a tracking plan for the core events we want to track from our users interacting with our product and product websites.
+Create a tracking plan for the core events we want to track from users interacting with the product and product websites.
 
 We have selected the basic tracking plan template provided by Segment as our tracking plan template. We could add the following columns to the tracking plan: **Name**, **Description**, **Properties**, **Property values**, **Data Type**, **Conversion**, **Location**, **Status**, **Code**.
 
@@ -36,13 +36,13 @@ e. write the documentation of how the data warehouse is structured and how it is
 
 ## 3. Add tracking snippet into a web application
 
-Based on the `Logged In` event defined in the tracking plan, we can add the tracking snippet to a web application (preliminarily a basic version of product documentation), which is run locally. (Hopefully we could have this version of product documentation also run inside a Docker container.)
+Based on the `Logged In` event defined in the tracking plan, we can add the tracking snippet to a web application (preliminarily a basic version of product documentation), which is run locally. (Hopefully, we could have this version of product documentation also run inside a Docker container.)
 
 In this step, we add a tracking snippet to a login form, so that when a user _successfully_ logs in, a `Logged In` event is created and sent to the data warehouse.
 
 This part of the project can include also the task of creating the modal or view for logging in (doesn't have to have real auth connected now). That would then mean writing HTML, CSS (or Tailwind CSS), and TypeScript to create a login form, which then creates the `Logged In` event when some conditions apply (i.e., successful login).
 
-_One consideration is that would we want to use an event slinger in between the web application and the data warehouse? This is something that should be investigated. On the other hand, we can think how to write the tracking snippet that creates the event correctly and sends it to the data warehouse. Segment is one example of a event slinger, and it provides ready-written tracking snippets that can be used._
+_One consideration is that would we want to use an event slinger in between the web application and the data warehouse. This is something that should be investigated. On the other hand, we can think how to write the tracking snippet that creates the event correctly and sends it to the data warehouse. Segment is one example of an event slinger, and it provides ready-written tracking snippets that can be used._
 
 ## 4. Create a report through PowerBI
 
