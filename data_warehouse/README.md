@@ -1,13 +1,11 @@
-# Walking skeleton
+# API Server
 
-This is a walking skeleton -- a starting point for working on the course
-assignments -- for the free online Web Software Development course available at
-[https://fitech101.aalto.fi/web-software-development/](https://fitech101.aalto.fi/web-software-development/).
+Build an API server with Deno and Typescript to test our data warehouse endpoints.
 
 ## Contents
 
-The walking skeleton has a simple Deno application that starts on port `7777`.
-The application responds to queries with the message `Hello world!` and logging
+The API server has a simple Deno application that starts on port `7777`.
+The application responds to queries with the message `Hello world!` and logs
 the contents of the database table `names` to the console.
 
 Launching the walking skeleton starts the Deno application, a PostgreSQL server,
@@ -15,7 +13,7 @@ and a database migration process (Flyway).
 
 ## Starting and shutting down
 
-The walking skeleton is used with Docker Compose.
+The API server is used with Docker Compose.
 
 - To start the walking skeleton, open up the terminal in the folder that
   contains the `docker-compose.yml` file and type `docker-compose up`.
@@ -26,7 +24,7 @@ The walking skeleton is used with Docker Compose.
 
 ## Watching for changes
 
-The walking skeleton by default watches for changes in the Deno code and
+The API server by default watches for changes in the Deno code and
 restarts the application whenever needed. There is a
 [bug](https://github.com/denoland/deno/issues/6966), however, that leads to this
 functionality not working in Windows Subsystem for Linux. When working with WSL,
@@ -45,7 +43,7 @@ This opens up `psql` console, where you can write SQL commands.
 
 ## Database migrations
 
-When the walking skeleton is started, Flyway is used to run the SQL commands in
+When the API server is started, Flyway is used to run the SQL commands in
 the database migration files that reside in the `flyway/sql`-folder. If a
 database exists, Flyway checks that the schema corresponds to the contents of
 the database migration files.
@@ -85,7 +83,7 @@ default, we assume that you have the VSCode Deno plugin.
 
 ## E2E Tests with playwright
 
-The walking skeleton comes also with simple
+The API server comes also with simple
 [Playwright](https://playwright.dev/) configuration that provides an easy
 approach for building end-to-end tests. Check out the folder `tests` within
 `e2e-playwright` to get started.
