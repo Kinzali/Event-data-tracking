@@ -15,9 +15,9 @@ and a database migration process (Flyway).
 
 The API server is used with Docker Compose.
 
-- To start the walking skeleton, open up the terminal in the folder that
+- To start the API server, open up the terminal in the folder that
   contains the `docker-compose.yml` file and type `docker-compose up`.
-- To stop the walking skeleton, press `ctrl+C` (or similar) in the same terminal
+- To stop the API server, press `ctrl+C` (or similar) in the same terminal
   where you wrote the command `docker-compose up`. Another option is to open up
   a new terminal and navigate to the folder that contains the
   `docker-compose.yml` file, and then write `docker-compose stop`.
