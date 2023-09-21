@@ -44,10 +44,16 @@ In this step, we add a tracking snippet to a login form, so that when a user _su
 
 This part of the project can include also the task of creating the modal or view for logging in (doesn't have to have real auth connected now). That would then mean writing HTML, CSS (or Tailwind CSS), and TypeScript to create a login form, which then creates the `Logged In` event when some conditions apply (i.e., successful login).
 
-_One consideration is that would we want to use an event slinger in between the web application and the data warehouse. This is something that should be investigated. On the other hand, we can think how to write the tracking snippet that creates the event correctly and sends it to the data warehouse. Segment is one example of an event slinger, and it provides ready-written tracking snippets that can be used._
+_One consideration is that would we want to use an event slinger in between the web application and the data warehouse. This is something that should be investigated. On the other hand, we can think of how to write the tracking snippet that creates the event correctly and sends it to the data warehouse. Segment is one example of an event slinger, and it provides ready-written tracking snippets that can be used.
+
+The Web application is created using React and Tailwind CSS. The 'Segment' is used as a slinger, and the data is sent to the segment. https://dashboard.render.com/ is used to host our data warehouse.
+
+Web Application: https://github.com/Kinzali/Event-data-tracking/tree/main/web_application
 
 ## 4. Create a report through PowerBI
 
 In this step, we use PowerBI to connect to the data warehouse. We should be able to explore the data stored in the data warehouse through PowerBI.
 
-After the connection can be succesfully made, the task is to create a report, which shows a) all the users that have logged in and b) when a user last logged in (in a column called "Last logged in"). This should be ordered so the most recent person to login would be first.
+After the connection can be successfully made, the task is to create a report, which shows a) all the users that have logged in and b) when a user last logged in (in a column called "Last logged in"). This should be ordered so the most recent person to log in would be first.
+
+
