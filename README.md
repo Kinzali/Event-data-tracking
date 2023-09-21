@@ -34,6 +34,8 @@ d. learn how to connect to the database outside of the container to add or updat
 
 e. write the documentation of how the data warehouse is structured and how it is used/accessed/set up locally
 
+Please follow the link to check how the Dataware house and API server are built. [Data Warehoouse]: (https://github.com/Kinzali/Event-data-tracking/blob/main/data_warehouse/README.md)
+
 ## 3. Add tracking snippet into a web application
 
 Based on the `Logged In` event defined in the tracking plan, we can add the tracking snippet to a web application (preliminarily a basic version of product documentation), which is run locally. (Hopefully, we could have this version of product documentation also run inside a Docker container.)
