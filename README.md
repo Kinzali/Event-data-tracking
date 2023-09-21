@@ -47,7 +47,6 @@ This part of the project can include also the task of creating the modal or view
 _One consideration is that would we want to use an event slinger in between the web application and the data warehouse. This is something that should be investigated. On the other hand, we can think of how to write the tracking snippet that creates the event correctly and sends it to the data warehouse. Segment is one example of an event slinger, and it provides ready-written tracking snippets that can be used.
 
 The Web application is created using React and Tailwind CSS. The 'Segment' is used as a slinger, and the data is sent to the segment. https://dashboard.render.com/ is used to host our data warehouse.
-
 Web Application: https://github.com/Kinzali/Event-data-tracking/tree/main/web_application
 
 ## 4. Create a report through PowerBI
