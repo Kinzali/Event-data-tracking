@@ -2,6 +2,8 @@
 
 The goal of this project is that we can answer simple questions, such as “Has this user tried this feature already?” and “Has this new user logged in yet?
 
+![Event-data](https://github.com/Kinzali/Event-data-tracking/assets/121554533/fd679ff1-c926-4050-844e-cab9307eb396)
+
 # Outline for project and core tasks for learning and implementation
 
 ## 1. Write a tracking plan for core events of the product
